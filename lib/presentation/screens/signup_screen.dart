@@ -49,8 +49,9 @@ class SignUpScreen extends StatelessWidget {
                     ),
                     color: Colors.white,
                     height: 50,
-                    width: 180
+                    width:  MediaQuery.of(context).size.width * 0.4,
                    ),
+                  SizedBox(height: 16),
                   FlexibleButton(
                     label: "FACEBOOK",
                     icon: SvgPicture.asset(
@@ -59,7 +60,7 @@ class SignUpScreen extends StatelessWidget {
                       width: 20,
                     ),
                     color: Colors.white,
-                    width: 180,
+                    width:  MediaQuery.of(context).size.width * 0.4,
                     height: 50,
                    )
                   ],
@@ -205,6 +206,7 @@ class SignUpScreen extends StatelessWidget {
                 child: RichText(
                  text: const TextSpan(
                   text: "Already have an account?",
+                  style: TextStyle(color: Colors.black),
                   children: [
                     TextSpan(text: ' Log In', style: TextStyle(color: Color.fromARGB(255, 216, 67, 13))),
                   ]

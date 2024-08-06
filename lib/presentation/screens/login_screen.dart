@@ -51,8 +51,9 @@ class LoginScreen extends StatelessWidget {
                     ),
                     color: Colors.white,
                     height: 50,
-                    width: 180
+                    width:  MediaQuery.of(context).size.width * 0.4,
                    ),
+                  
                   FlexibleButton(
                     label: "FACEBOOK",
                     icon: SvgPicture.asset(
@@ -61,13 +62,13 @@ class LoginScreen extends StatelessWidget {
                       height: 20,
                     ),
                     color: Colors.white,
-                    width: 180,
+                    width: MediaQuery.of(context).size.width * 0.4,
                     height: 50,
                    )
                   ],
                 ),
               ),
-              SizedBox(height: 32),
+              const SizedBox(height: 32,),
               const Text(
                 'LOG IN WITH EMAIL',
                 style: TextStyle(fontSize: 16, color: Color.fromARGB(255, 94, 93, 93)),
@@ -148,6 +149,7 @@ class LoginScreen extends StatelessWidget {
                 child: RichText(
                  text: const TextSpan(
                   text: "Don't have an account?",
+                  style: TextStyle(color: Colors.black),
                   children: [
                     TextSpan(text: ' Sign Up', style: TextStyle(color: Color.fromARGB(255, 216, 67, 13))),
                   ]
