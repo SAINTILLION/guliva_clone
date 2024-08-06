@@ -200,10 +200,7 @@ class SignUpScreen extends StatelessWidget {
               SizedBox(height: 16),
               TextButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => VehiclePassengerScreen()),
-                  );
+                 Navigator.of(context).pop();
                 },
                 child: RichText(
                  text: const TextSpan(
